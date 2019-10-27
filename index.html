@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Canvas</title>
+</head>
+<body>
+    <header class="header">
+        <button><img src="assets/nav icon.svg" width="40px" height="40px" alt=""></button>
+        <h3>CodeJam - Pallete</h3>
+        <button><img src="assets/menu icon.svg" width="25px" height="25px" alt=""></button>
+    </header>
+    <div class="app">
+        <div class="app-bar">
+            <div class="app-bar__panel">
+                <button class="app-bar__btn">
+                    <img src="assets\icon-share-2.svg" alt="" width="20px" height="20px">
+                    <p>Paint bucket</p>
+                </button>
+                <button class="app-bar__btn">
+                    <img src="assets\icon-upload.svg" alt="" width="20px" height="20px">
+                    <p>Choose color</p>
+                </button>
+                <button class="app-bar__btn">
+                    <img src="assets\icon-copy.svg" alt="" width="20px" height="20px">
+                    <p>Move</p>
+                </button>
+                <button class="app-bar__btn">
+                    <img src="assets\icon-share.svg" alt="" width="20px" height="20px">
+                    <p>Transform</p>
+                </button>
+            </div>
+            <div class="app-bar__panel">
+                <button class="app-bar__btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="9.5" fill="#fff" stroke="black"/>
+                    </svg>
+                    <p>Current color</p>
+                </button>
+                <button class="app-bar__btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="9.5" fill="#fff" stroke="black"/>
+                    </svg>
+                    <p>Prev color</p>
+                </button>
+                <button class="app-bar__btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="9.5" fill="#F74141" stroke="black"/>
+                    </svg>
+                    <p>Red</p>
+                </button>
+                <button class="app-bar__btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="9.5" fill="#41B6F7" stroke="black"/>
+                    </svg>
+                    <p>Blue</p>
+                </button>
+            </div>
+        </div>
+        <canvas class="canvas" width="512px" height="512px"></canvas>
+        <div class="app-bar__size-switcher">
+            <div class="app-bar__panel">
+                <button class="app-bar__btn" id="img_lg">
+                    <p>256x256</p>
+                </button>
+                <button class="app-bar__btn" id="img_sm">
+                    <p>4x4</p>
+                </button>
+                <button class="app-bar__btn" id="img_md">
+                    <p>32x32</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="data/32x32.js"></script>
+    <script type="text/javascript" src="data/4x4.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
